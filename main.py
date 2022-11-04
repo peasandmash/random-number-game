@@ -21,4 +21,5 @@ def make_a_guess(answer):
   if type(guess):
     return different_from_answer(guess, answer)
   else:
-    return "Not an integer"
+    print("Not an integer")
+    return make_a_guess(answer)

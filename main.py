@@ -26,8 +26,8 @@ def make_a_guess(answer):
 
 def play_game():
   answer = generate_random_number()
-  result = make_a_guess(answer)
-
+  result = ''
   while result != 'Correct':
     result = make_a_guess(answer)
+    print(result)
   

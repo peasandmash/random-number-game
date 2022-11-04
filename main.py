@@ -7,7 +7,6 @@ def generate_random_number():
 
 
 def different_from_answer(guess, answer):
-  guess = int(guess)
   answer = int(answer)
   if guess == answer:
     return 'Correct'
@@ -15,4 +14,11 @@ def different_from_answer(guess, answer):
     return 'Too high'
   elif guess < answer:
     return 'Too low'
-    
+
+
+def make_a_guess(answer):
+  guess = int(input("Make a guess: "))
+  if type(guess):
+    return different_from_answer(guess, answer)
+  else:
+    return "Not an integer"
